@@ -1,0 +1,61 @@
+<!--Interpolation-->
+<H1>Welcome, {{firstName}} {{lastName}}</H1>
+<!--NG-Class- use this second on title-->
+<div [ngClass]="{'text-border': true}">
+    <h3>Navigation</h3>
+<div class="dropdown">
+    <div class="dropdown-content">
+      <a href="#">Home</a>
+      <br>
+      <br>
+      <a href="#">Profile</a>
+      <br>
+      <br>
+      <a href="#">Contact Us</a>
+      <br>
+      <br>
+    </div>
+    </div>
+    <p>
+    </div>        
+<div class="row">
+      <div class="column left" style="background-color:#2499cb;">
+    <p>
+    <form action="/action_page.php">
+      <label for="fname">Full Name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="fname">Address:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="fname">Telephone Number:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="fname">Email Address:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <input type="submit" value="Create">
+    </form>
+    <div class="row">
+      <div class="row">
+      <div class="column right" style="background-color:#2ea3d5;">
+ <!--NG-Style- use this one on title-->
+ <div [ngStyle]="{'font-style': 'italic', 'color': 'purple', 'background':'lightblue','text-border': 'black'}">
+    <h2>Schedule a Meeting Schedule</h2>
+</div> 
+      <form action="/action_page.php">
+      <label for="fname">Date:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="fname">Time:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="fname">Location:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+<button (click)="onSave()">Submit</button>
+      <br>
+      {{savedMessage}}
+<div [ngStyle]="{'font-style': 'bold', 'color': 'blue', 'background':'lightblue','text-border': 'black'}">
+        <h4>PLEASE JOIN YOUR SCHEDULED MEETING</h4>
+    </div>
+      <form action="https://zoom.us/join" method="get" target="_blank">
+<!--Property Binding-->
+<button [disabled]="isDisabled">Submit</button>
+<br>
+    </form>
+    
+    

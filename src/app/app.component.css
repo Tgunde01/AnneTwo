@@ -1,0 +1,45 @@
+.text-border {
+    color: black;
+    border: 3px solid blue;
+    background-color: lightblue;
+}
+
+* {
+        box-sizing: border-box;
+    }
+    
+    body {
+        text-align: center;
+        background-color: lightcyan; 
+    }
+    
+    head {
+        font-size: 25px;
+    }
+    
+    .column {
+        float: right;
+        background-color: cyan;
+        text-align: center;
+        width: 50%;
+        padding: 10px;
+        height: 400px; 
+    }
+    
+    .row:right {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .column {
+        float: left;
+        background-color: cyan;
+        text-align: center;
+        width: 50%;
+        padding: 10px;
+        height: 400px; 
+    }
+    
+
+    
